@@ -2,12 +2,14 @@
  <head>
     <title>shawning tech systems</title>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://alcdn.msauth.net/browser/2.35.0/js/msal-browser.min.js"></script>
   </head>
 <body>
 
 <h1>login to shawning tech systems</h1>
 
 <form action="/action_page.php">
+   <button type="button" id="microsoft-login-button">Sign in with Microsoft</button>
   <label for="email">email</label>
   <input type="email" id="email" name="email"><br><br>
   <label for="pwd">password</label>
