@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>shawning tech systems</title>
+    <script src="ruffle/ruffle.js"></script>
+    <html lang="en-US"
+</head>
+<body>
+
+<h1 style="background-color:Tomato;">games you can play on shawning tech systems website</h1>
+<p>(powered by ruffle)</p>
+
+<p>papa's pizzaeria by flipline studios</p>
+<p>---------------</p>
+ <div id="flash-container"></div>
+    <script>
+        window.RufflePlayer = window.RufflePlayer || {};
+        window.addEventListener("load", (event) => {
+            const ruffle = window.RufflePlayer.newest();
+            const player = ruffle.createPlayer();
+            const container = document.getElementById("flash-container");
+            container.appendChild(player);
+            player.load({ url: "games/papapizza.swf" }); // Replace with the actual path to your SWF
+            // Optional: Set player dimensions
+            player.style.width = "800px";
+            player.style.height = "600px";
+        });
+    </script>
+<p>---------------</p>
+
+<h1 style="background-color:Gray;">powered by github pages</h1>
+
+
+</body>
+</html> 
