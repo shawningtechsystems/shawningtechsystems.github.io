@@ -29,39 +29,9 @@
         data-shape="rectangular"
         data-logo_alignment="left">
    </div>
-   <button id="login-button">Log in with Spotify</button>
 </form>
 
 <a href="./error.html">log in</a>
 <a href="./index.html">go back</a>
 
- <script>
-      document.getElementById('login-button').addEventListener('click', function() {
-        var client_id = '927dfa2ebcf24ae6b575fbe806fff830'; // Replace with your Client ID
-        var redirect_uri = 'error.html'; // Replace with your Redirect URI
-        var scope = 'user-read-private user-read-email'; // Define required scopes
-        var state = generateRandomString(16); // Generate a random string for state
-
-        localStorage.setItem('spotify_auth_state', state);
-
-        var auth_url = 'https://accounts.spotify.com/authorize?' +
-          'response_type=code' +
-          '&client_id=' + encodeURIComponent(client_id) +
-          '&scope=' + encodeURIComponent(scope) +
-          '&redirect_uri=' + encodeURIComponent(redirect_uri) +
-          '&state=' + encodeURIComponent(state);
-
-        window.location = auth_url;
-      });
-
-      function generateRandomString(length) {
-        var text = '';
-        var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-        for (var i = 0; i < length; i++) {
-          text += possible.charAt(Math.floor(Math.random() * possible.length));
-        }
-        return text;
-      }
-    </script>
- 
 </html>
