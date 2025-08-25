@@ -25,9 +25,24 @@
             player.style.height = "600px";
         });
     </script>
+
+</object>
+ <div id="flash-container"></div>
+    <script>
+        window.RufflePlayer = window.RufflePlayer || {};
+        window.addEventListener("load", (event) => {
+            const ruffle = window.RufflePlayer.newest();
+            const player = ruffle.createPlayer();
+            const container = document.getElementById("flash-container");
+            container.appendChild(player);
+            player.load({ url: "games/3pandas.swf" }); // Replace with the actual path to your SWF
+            // Optional: Set player dimensions
+            player.style.width = "800px";
+            player.style.height = "600px";
+        });
+    </script>
     
 <h1 style="background-color:Gray;">powered by github pages</h1>
-
 
 </body>
 </html> 
