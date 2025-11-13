@@ -22,7 +22,7 @@ const initPinScreen = (selector, onEnter) => {
 	}
 };
 
-initPinScreen("#mainPinScreen", (pin, clear) => {
-	console.log(`Entered Pin: ${pin}`);
-	clear();
+initPinScreen("#mainPinScreen" => {
+	console.log('now loading google.com...');
+    window.location.href="www.google.com";
 });
