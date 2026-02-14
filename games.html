@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<h1 style="background-color:Tomato;">games you can play on shawning tech systems website</h1>
+<h1 style="background-color:Tomato;">flash games cuz why not</h1>
 <p>(powered by ruffle)</p>
 
 </object>
@@ -20,8 +20,7 @@
             const player = ruffle.createPlayer();
             const container = document.getElementById("flash-container");
             container.appendChild(player);
-            player.load({ url: "games/papapizza.swf" }); // Replace with the actual path to your SWF
-            // Optional: Set player dimensions
+            player.load({ url: "games/papapizza.swf" });
             player.style.width = "800px";
             player.style.height = "600px";
         });
@@ -36,8 +35,22 @@
             const player = ruffle.createPlayer();
             const container = document.getElementById("flash-container");
             container.appendChild(player);
-            player.load({ url: "games/3pandas.swf" }); // Replace with the actual path to your SWF
-            // Optional: Set player dimensions
+            player.load({ url: "games/3pandas.swf" });
+            player.style.width = "800px";
+            player.style.height = "600px";
+        });
+    </script>
+
+</object>
+ <div id="flash-container"></div>
+    <script>
+        window.RufflePlayer = window.RufflePlayer || {};
+        window.addEventListener("load", (event) => {
+            const ruffle = window.RufflePlayer.newest();
+            const player = ruffle.createPlayer();
+            const container = document.getElementById("flash-container");
+            container.appendChild(player);
+            player.load({ url: "games/bloxorz.swf" });
             player.style.width = "800px";
             player.style.height = "600px";
         });
